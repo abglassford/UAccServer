@@ -2,18 +2,18 @@
 
 return  [
   'database' => [
-    'name' => 'unityAccelerator',
-    'username' => 'root',
-    'password' => 'root',
-    'connection' => 'mysql:unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock',
+    'name' => 'heroku_d99342182a84fcf	',
+    'username' => 'b7033fa1802780',
+    'password' => '0c7c53db',
+    'connection' => 'mysql://b7033fa1802780:0c7c53db@us-cdbr-iron-east-04.cleardb.net/heroku_d99342182a84fcf?reconnect=true',
     'options' => [
       PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     ]
   ]
 ];
-
-//for heroku deployment
-
+//
+// // for heroku deployment
+//
 // $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 // $server = $url["host"];
 // $username = $url["user"];
@@ -26,3 +26,7 @@ return  [
 //     'pw' => $password,
 //     'db' => $db
 // );
+//
+// print('Host'. $config['host']);
+//
+// return $config;
