@@ -4,7 +4,7 @@ class QueryBuilder {
   protected $pdo;
 
   public function __construct () {
-    $config = require '../config.php';
+    $config = require '../config/config.php';
     $this->pdo = Connection::make($config['database']);
   }
 

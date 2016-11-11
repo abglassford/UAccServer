@@ -1,6 +1,6 @@
 <?php
 
-$config = require '../config.php';
+$config = require '../config/config.php';
 
 class Connection {
   public static function make ($config) {
