@@ -39,7 +39,7 @@ function deleteRowHandler ($request, $response) {
   $id = $request->getAttribute('id');
   $query = $db->selectOne($table, $id);
   if (count($query)) {
-    $db->removeOne('users', $id);
+    $db->removeOne($table, $id);
     return $response->withJson(['Message'=>'Success!'], 201);
   } else {
     return $response->withJson(['Message'=> $table . ' #' . $id . ' Not Found'], 404);
