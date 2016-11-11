@@ -19,6 +19,8 @@ $app->get('/api/{table}/{id}', function (req $request, res $response) {
 });
 
 $app->post('/api/users', function (req $request, res $response) {
+  $entityBody = file_get_contents('php://input');
+  var_dump($entityBody);
   return postUserHandler($request, $response);
 });
 
